@@ -1,0 +1,16 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" *ngFor="let item of photos">
+          <ion-img [src]="item"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+      <ion-fab-button (click)="takePicture()">
+        <ion-icon name="camera"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+</ion-content>

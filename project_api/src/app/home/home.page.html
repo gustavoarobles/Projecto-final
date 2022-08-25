@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Lorem Picsum
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let photo of data">
+      <ion-label>
+        <h2 class="ion-text-center">{{photo.author}}</h2>
+        <ion-img src="{{photo.download_url}}"></ion-img>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

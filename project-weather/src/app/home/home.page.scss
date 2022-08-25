@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-toolbar{
+  --ion-background-color: #11103a;
+color: #fff;
+
+}
+
+ion-content{
+
+--ion-background-color:#11103a;
+
+}
+
+h1{
+
+color: #fff;
+
+}
+
+ion-card{
+
+--bacground :#1b1c48;
+
+}
+
+ion-card h2 {
+
+color:#fdce57;
+
+}
+
+
+ion-img{
+width:  64px;
+height: 64px;
+display: block;
+margin:0px auto;
+
+}
+
+.tarjeta {
+  font-family: 'Edu SA Beginner', cursive;
+
+}
+

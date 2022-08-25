@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Wheather
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <h1 class="ion-text-center ion-text-capitalize" > Hoy </h1>
+    <ion-card *ngFor="let it of data.dataseries">
+<h1 class="ion-text-center ion-text-capitalize">{{it.date| datepipe}}</h1>
+<ion-img src="../../assets/{{it.weather}}.jpg"></ion-img>
+<div class="ion-text-center">
+  <h2>Max: {{it.temp2m.max}}°</h2>
+  <p>Min: {{it.temp2m.min}}°</p>
+</div>
+    </ion-card>
+  </ion-list>
+</ion-content>

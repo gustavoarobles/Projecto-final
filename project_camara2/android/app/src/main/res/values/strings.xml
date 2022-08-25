@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">project_camara2</string>
+    <string name="title_activity_main">project_camara2</string>
+    <string name="package_name">com.miempresa.myApp</string>
+    <string name="custom_url_scheme">com.miempresa.myApp</string>
+</resources>

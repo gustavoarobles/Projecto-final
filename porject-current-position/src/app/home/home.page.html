@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+     Posición 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="getCurrentPosition()" expand="full" fill="outline" color="success"><ion-icon name="locate"></ion-icon>Ubicacion Actual</ion-button>
+<ion-card *ngIf="position"> 
+  <ion-card-content>
+    <ion-item><ion-icon name="location" slot="start"></ion-icon>
+    lat:{{position.coords.latitude}}</ion-item>
+    <ion-item>
+      <ion-icon name="location" slot="start"></ion-icon>
+      lng:{{position.coords.longitude}}
+    </ion-item>
+  </ion-card-content>
+</ion-card>
+</ion-content>
